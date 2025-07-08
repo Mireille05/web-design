@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script type="text/javascript">alert("click ok to continue");</script>
+        <title>Javascript lesson1</title>
+    </head>
+    <body>
+        <!-- <script type="text/javascript">
+            var a=20;
+            var b=30;
+            var prod=a*b;
+            document.write(prod);
+            var age=prompt("Enter your age to continue");
+            
+            if(age>=80){
+                document.write("oldest");
+            }else if(age<80 && age>60){
+                document.write("old");
+            }else if(age<60 && age>40){
+                document.write("strong");
+            }else if(age<40 && age>30){
+                document.write("middle aged");
+            }else if(age<30 && age>20){
+                document.write("aged");
+            }else if(age<20 && age>=0){
+                document.write("child");
+            }
+        </script> -->
+        <!-- <h1>Introduction to Javascript</h1> -->
+        <table border="5" width="40%" height="40">
+            <tr>
+                <td>
+                    <pre>
+                        <form action="">
+                            NUMBER1: <input type="text" id="n1">
+
+                        NUMBER2: <input type="text"  id="n2">
+                        <input type="button" value="product" onclick="products()">
+                        <input type="button" value="average" onclick="average()">
+
+
+                        </form>
+                        
+                    </pre>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript"> 
+        function products() {
+            var numb1= document.getElementById('n1').value;
+            var numb2= document.getElementById('n2').value;
+            var result= numb1*numb2;
+            
+            
+            document.write(result);
+
+           
+        }
+         function average(){
+                var numb1= parseInt(document.getElementById('n1').value);
+                var numb2=parseInt(document.getElementById('n2').value) ;
+                var sum = (numb1+ numb2) ;
+                var avg=  sum /2;
+
+                document.write(avg);
+                
+            }
+            </script>
+    </body>
+</html>
