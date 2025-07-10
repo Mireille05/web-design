@@ -1,74 +1,83 @@
 <html>
-
-<head>
-        <link rel="stylesheet" href="june26.css">
+  <head>
+    <link rel="stylesheet" href="june26.css" />
 
     <title>UR</title>
-</head>
-<body>
-    <table  width="100%" height="10%" >
-        <tr tr bgcolor="black">
-            <td><img src="logo.png" alt="" width="30" height="30"></td>
-           <td><font color="white">About</td></font>
-            <td><font color="white">Admissions</td></font>
-            <td><font color="white">News</td></font>
-            <td><font color="white">Partners</td></font>
-            <td><font color="white">Help</td></font>
-
-        </tr>
-        <!-- <tr>
+  </head>
+  <body>
+    <table bgcolor="black" width="100%" height="10%">
+      <tr class="table1">
+        <td><img src="logo.png" alt="" width="30" height="30" /></td>
+        <td>About</td>
+        <td>Admissions</td>
+        <td>News</td>
+        <td>Partners</td>
+        <td>Help</td>
+      </tr>
+      <!-- <tr>
                 <td colspan="6"><img src="banner1.png" alt=""width=100% height="40"></td>
             </tr> -->
-        
     </table>
     <table width="100%" border="0" height="10%">
-        <tr>
-            <td><img src="banner1.png" alt="" width="100%" height="40"></td>
-        </tr>
+      <tr>
+        <td><img src="banner1.png" alt="" width="100%" height="40" /></td>
+      </tr>
     </table>
     <table width="100%" border="3" height="80%" class="Project">
-        <tr>
-            <td width="45%"><img src="pict1.jpg" alt=""width="100%" height="600"></td>
-            <td id="pic" width="70%">
-                <h3>WELCOME TO UNIVERSITY OF RWANDA</h3>
-                <P>UR is pursuing solution to urgent development challenges and seeking meaningful,equitable <br>
-                empowering, enlightening and manualy beneficial partnership to access global knowledge and expertise.
-                </P>
+      <tr>
+        <td width="45%">
+          <img src="pict1.jpg" alt="" width="100%" height="600" />
+        </td>
+        <td id="pic" width="70%">
+          <h3>WELCOME TO UNIVERSITY OF RWANDA</h3>
+          <p>
+            UR is pursuing solution to urgent development challenges and seeking
+            meaningful,equitable <br />
+            empowering, enlightening and manualy beneficial partnership to
+            access global knowledge and expertise.
+          </p>
 
-        
-                    <h3>ENTRY REQUIREMENTS BY COLLEGE</h3>
-                    <P>Here you'll find a detailed explanation of each admission application requirement. Most of the information 
-                        applies to both first year and transfer applicants, and requirements are the same for domestic and international applicants.</P>
+          <h3>ENTRY REQUIREMENTS BY COLLEGE</h3>
+          <p>
+            Here you'll find a detailed explanation of each admission
+            application requirement. Most of the information applies to both
+            first year and transfer applicants, and requirements are the same
+            for domestic and international applicants.
+          </p>
 
-                    <h3>Colleges at UR:</h3>
-                    <Ul>
-                        <li>College of Arts and Social Sciences(CASS)</li>
-                        <li>College of Agriculture,Animal sciences and veternary Medicine(CAVM)</li>
-                        <li>College of Business and Economics(CBE)</li>
-                        <li>College of Medicine and health sciences(CMHS)</li>
-                        <li>College of Education(CE)</li>
-                        <li>College of Science and Technology(CST)</li>
-                    </Ul>
-            
-                
-            </td>
+          <h3>Colleges at UR:</h3>
+          <ul>
+            <li>College of Arts and Social Sciences(CASS)</li>
+            <li>
+              College of Agriculture,Animal sciences and veternary
+              Medicine(CAVM)
+            </li>
+            <li>College of Business and Economics(CBE)</li>
+            <li>College of Medicine and health sciences(CMHS)</li>
+            <li>College of Education(CE)</li>
+            <li>College of Science and Technology(CST)</li>
+          </ul>
+        </td>
 
-        
-    
-            <td>
-                <h3>CALCULATE STUDENTS MARKS</h3>
-                <pre>
+        <td>
+          <h3>CALCULATE STUDENTS MARKS</h3>
+          <pre>
                         <form action="">
-                            STUDENT-NAMES:<input type="text" name="" id="">
-                            STUDENT-ID: <input type="text" name="" id="">
-                            DEPARTMENT: <input type="text" name="" id="">
-                            COURSE-MARKS/30: <input type="text" name="" id="n1">
-                            MID-TERM/30: <input type="text" name="" id="n2">
-                            FINAL-EXAM/40: <input type="text" name="" id="n3">
+     STUDENT-NAMES: <input type="text" name="" id="">  
+
+        STUDENT-ID: <input type="text" name="" id="">
+
+        DEPARTMENT: <input type="text" name="" id="">
+
+   COURSE-MARKS/30: <input type="text" name="" id="n1">
+
+       MID-TERM/30: <input type="text" name="" id="n2">
+       
+     FINAL-EXAM/40: <input type="text" name="" id="n3">
                             
                             <hr>
 
-   <input type="button" value="TOTAL" onclick="Total()">    <input type="button" value="AVERAGE" onclick="Average()">   <input type="reset" value="DELETE" >
+   <input type="button" value="TOTAL" onclick="Total()">                  <input type="button" value="AVERAGE" onclick="Average()">               <input type="reset" value="DELETE" >
 
 <input type="text" id="tot"> <input type="text" id="avg">  <input type="text">
  
@@ -78,28 +87,25 @@
 
                         </form>
                     </pre>
-            </td>
-            </tr>
-        </table>
-     <script>
-        function Total() {
-            var numb1 = parseInt(document.getElementById('n1').value);
-            var numb2 = parseInt(document.getElementById('n2').value);
-            var numb3 = parseInt(document.getElementById('n3').value);
-            var results = numb1 + numb2 + numb3;
-            document.getElementById('tot').value = results;
-        }
+        </td>
+      </tr>
+    </table>
+    <script>
+      function Total() {
+        var numb1 = parseInt(document.getElementById("n1").value);
+        var numb2 = parseInt(document.getElementById("n2").value);
+        var numb3 = parseInt(document.getElementById("n3").value);
+        var results = numb1 + numb2 + numb3;
+        document.getElementById("tot").value = results;
+      }
 
-        function Average() {
-            var numb1 = parseInt(document.getElementById('n1').value);
-            var numb2 = parseInt(document.getElementById('n2').value);
-            var numb3 = parseInt(document.getElementById('n3').value);
-            var avgr = (numb1 + numb2 + numb3) / 3;
-            document.getElementById('avg').value = avgr;
-        }
-
+      function Average() {
+        var numb1 = parseInt(document.getElementById("n1").value);
+        var numb2 = parseInt(document.getElementById("n2").value);
+        var numb3 = parseInt(document.getElementById("n3").value);
+        var avgr = (numb1 + numb2 + numb3) / 3;
+        document.getElementById("avg").value = avgr;
+      }
     </script>
-
-
-</body>
+  </body>
 </html>
