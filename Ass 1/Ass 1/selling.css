@@ -1,0 +1,38 @@
+body{
+    background-image: url(img/image2.PNG);
+}
+
+.tb1{
+    background-color: black;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.tb2 td:first-child{
+    width: 50%;
+    height: 5%;
+}
+.tb2 img{
+    width: 100%;
+    height: 2%;
+}
+
+#us{
+    background-color: transparent;
+    color: white;
+}
+
+#ls{
+    background-color: white;
+}
+
+#sl{
+    color: white;
+    text-align: center;
+}
+
+.ls img{
+    width: 20%;
+    height: 10%;
+}
